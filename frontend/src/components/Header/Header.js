@@ -19,7 +19,7 @@ export default function Header() {
   return <header className={classes.header}>
     <div className={classes.container}>
         <Link to="/" className={classes.logo}>
-        Food mine
+        SweetFood
         </Link>
         <nav>
             <ul>
