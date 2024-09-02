@@ -5,7 +5,7 @@ import classes from './header.module.css'
 export default function Header() {
 
     const user = {
-        name : 'Max'
+        name : 'Sweet'
     };
 
     const cart = {

@@ -4,15 +4,15 @@ import classes from './thumbnails.module.css'
 import StarRating from '../StarRating/StarRating'
 import Price from '../Price/Price'
 
-export default function Thumbnails({foods}) {
+export default function Thumbnails({ foods }) {
   return (
     <ul className={classes.list}>
-      {foods.map(food =>(
-          <li key={food.id}>
-            <Link to={`/food/${food.id}`}>
-                <img className={classes.image}
-                src={`/foods/${food.imageUrl}`}
-                alt={food.name}/>
+      {foods.map(food => (
+        <li key={food.id}>
+          <Link to={`/food/${food.id}`}>
+            <img className={classes.image}
+              src={`/foods/${food.imageUrl}`}
+              alt={food.name} />
 
             <div className={classes.content}>
               <div className={classes.name}>{food.name}</div>
@@ -21,13 +21,13 @@ export default function Thumbnails({foods}) {
                 ❤
               </span>
               <div className={classes.stars}>
-                <StarRating stars={food.stars}/>
+                <StarRating stars={food.stars} />
               </div>
 
               {/* Cooktime,origin */}
               <div className={classes.product_item_footer}>
                 <div className={classes.origins}>
-                  {food.origin.map(origin =>(
+                  {food.origin.map(origin => (
                     <span key={origin}>{origin}</span>
                   ))}
                 </div>
@@ -40,9 +40,9 @@ export default function Thumbnails({foods}) {
                 <Price price={food.price} />
               </div>
             </div>
-            </Link>
-          </li>
-        ))}
+          </Link>
+        </li>
+      ))}
     </ul>
   )
 }

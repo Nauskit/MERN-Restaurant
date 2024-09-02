@@ -1,4 +1,4 @@
-.list{
+.list {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,7 +7,7 @@
     padding: 0;
 }
 
-.list li a{
+.list li a {
     display: flex;
     height: 22rem;
     width: 20rem;
@@ -19,50 +19,63 @@
     color: #e72929;
 }
 
-.image{
+.image {
     object-fit: cover;
     height: 14rem;
 }
 
-.content{
+.content {
     margin-top: .3rem;
     padding: .5rem 1rem;
     position: relative;
     height: 7rem;
 }
 
-.favorite{
+.favorite {
     position: absolute;
     top: .5rem;
     right: 1rem;
     font-size: 1.2rem;
 }
 
-.favorite.not{
+.favorite.not {
     color: gray;
 }
 
-.star{
+.star {
     margin: .5rem 0;
 }
 
-.product_item_footer{
+.product_item_footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 }
 
-.origin{
-    flex: 9;
+
+.origins span {
+    border-radius: 2rem;
+    background-color: whitesmoke;
+    display: inline-block;
+    font-size: .8rem;
+    color: gray;
+    margin-right: .3rem;
+    padding: 0 .5rem;
+    margin-top: .2rem;
 }
 
-.cook_time{
+.origins {
+    flex: 9;
+
+}
+
+.cook_time {
     font-size: .9rem;
     flex: 3;
     text-align: right;
 }
 
-.price{
+.price {
     position: absolute;
     bottom: 0;
     left: .9rem;
