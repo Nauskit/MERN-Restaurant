@@ -1,19 +1,19 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import classes from './search.module.css'
 import { useNavigate, useParams } from 'react-router-dom'
 
 export default function Seach() {
-  const [term,setTerm] = useState('')
+  const [term, setTerm] = useState('')
   const navigate = useNavigate();
-  const {searchTerm} = useParams();
+  const { searchTerm } = useParams();
 
-  const search = () =>{
+  const search = () => {
     term ? navigate('/search/' + term) : navigate('/');
   }
   return (
     <div className={classes.container} >
-      <input type='text' placeholder='Search Food' onChange={(e) => setTerm(e.target.value)} onKeyUp = {(e) => e.key === 'Enter' && search()}
-      defaultValue={searchTerm}/>
+      <input type='text' placeholder='Search Food' onChange={(e) => setTerm(e.target.value)} onKeyUp={(e) => e.key === 'Enter' && search()}
+        defaultValue={searchTerm} />
       <button onClick={search}>Seach</button>
     </div>
   )
