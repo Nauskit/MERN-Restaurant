@@ -1,20 +1,20 @@
 import React from 'react'
 
-export default function Price({price, locale, currency}) {
-    const formatPrice = () =>
-    new Intl.NumberFormat(locale,{
-        style: 'currency',
-        currency
+export default function Price({ price, locale, currency }) {
+  const formatPrice = () =>
+    new Intl.NumberFormat(locale, {
+      style: 'currency',
+      currency
     }).format(price);
 
 
 
   return (
-    <div>{formatPrice()}</div>
+    <span>{formatPrice()}</span>
   )
 }
 
-Price.defaultProps ={
-    locale: 'en-Us',
-    currency: 'THB',
+Price.defaultProps = {
+  locale: 'en-Us',
+  currency: 'THB',
 }
