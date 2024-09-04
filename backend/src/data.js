@@ -8,7 +8,7 @@ export const sample_foods = [
         origin: ['Thailand'],
         stars: 5,
         imageUrl: 'food-1.jpg',
-        tags: ['Cook in order']
+        tags: ['Cook-In-Order']
     },
     {
         id: '2',
@@ -30,7 +30,7 @@ export const sample_foods = [
         origin: ['Thailand'],
         stars: 4,
         imageUrl: 'food-3.jpg',
-        tags: ['Cook in order']
+        tags: ['Cook-In-Order']
     },
     {
         id: '4',
@@ -71,7 +71,7 @@ export const sample_tags = [
     { name: 'All', count: 6 },
     { name: 'Noodle', count: 2 },
     { name: 'Soup', count: 1 },
-    { name: 'Cook in order', count: 2 },
+    { name: 'Cook-In-Order', count: 2 },
     { name: 'Grill', count: 1 },
 
 ]
