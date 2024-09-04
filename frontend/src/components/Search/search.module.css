@@ -5,7 +5,7 @@
     margin-bottom: 1.5rem;
 }
 
-input {
+.container input {
     border: none;
     width: 35rem;
     height: 3rem;

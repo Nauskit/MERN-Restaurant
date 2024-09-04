@@ -2,19 +2,16 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import classes from './header.module.css'
 import { useCart } from '../../hooks/useCart';
+import { useAuth } from '../../hooks/useAuth';
 
 export default function Header() {
 
-    const user = {
-        name: 'Sweet'
-    };
+    const { user, logout } = useAuth();
 
 
     const { cart } = useCart();
 
-    const logout = () => {
 
-    }
 
     return <header className={classes.header}>
         <div className={classes.container}>

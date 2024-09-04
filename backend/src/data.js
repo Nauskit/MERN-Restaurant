@@ -74,4 +74,23 @@ export const sample_tags = [
     { name: 'Cook-In-Order', count: 2 },
     { name: 'Grill', count: 1 },
 
-]
+];
+
+export const sample_users = [
+    {
+        id: 1,
+        name: 'Sweet food',
+        email: 'sweet@email.com',
+        password: '12345',
+        address: 'Thailand',
+        isAdmin: true,
+    },
+    {
+        id: 2,
+        name: 'Nut food',
+        email: 'nut@email.com',
+        password: '12345',
+        address: 'Thailand',
+        isAdmin: false,
+    },
+];

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import classes from './foodPage.module.css'
-import { useNavigate, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { getById } from '../../services/foodService';
 import StarRating from '../../components/StarRating/StarRating';
 import Price from '../../components/Price/Price';
@@ -13,12 +13,12 @@ export default function FoodPage() {
     const [food, setFood] = useState({});
     const { id } = useParams();
     const { addToCart } = useCart();
-    // const navigate = useNavigate();
+
 
 
     const handleAddToCart = () => {
         addToCart(food);
-        // navigate('/cart');
+
     }
 
 

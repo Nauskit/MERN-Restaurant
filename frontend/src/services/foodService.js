@@ -10,7 +10,7 @@ export const search = async (searchTerm) => {
     return data;
 };
 
-export const getAllTags = async (sample_tags) => {
+export const getAllTags = async () => {
     const { data } = await axios.get('/api/foods/tags');
     return data;
 };
