@@ -36,7 +36,7 @@ export default function LoginPage() {
         <div className={classes.container}>
             <div className={classes.details}>
                 <Title title="Login" />
-                <from onSubmit={handleSubmit(submit)} noValidate>
+                <form onSubmit={handleSubmit(submit)} noValidate>
                     <Input
                         type='email'
                         label='Email'
@@ -60,7 +60,7 @@ export default function LoginPage() {
                     />
 
                     <Button type='submit' text='Login' />
-                </from>
+                </form>
             </div>
         </div>
     )
